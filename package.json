@@ -1,0 +1,58 @@
+{
+  "name": "vue-cli-plugin-publicpath",
+  "version": "1.0.0",
+  "description": "rewrite assets public path",
+  "main": "./service/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/longshihui/vue-cli-plugin-publicpath.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "plugin",
+    "vue-cli-plugin",
+    "publicPath",
+    "rewrite",
+    "override"
+  ],
+  "author": "colorless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/longshihui/vue-cli-plugin-publicpath/issues"
+  },
+  "homepage": "https://github.com/longshihui/vue-cli-plugin-publicpath#readme",
+  "devDependencies": {
+    "@vue/cli-service": "^3.2.0",
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^1.3.1",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "rewrite-css-publicpath-webpack-plugin": "^1.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,vue,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
