@@ -1,6 +1,6 @@
 # vue-cli-plugin-publicpath
 
-[![Build Status](https://travis-ci.org/longshihui/vue-cli-plugin-publicpath.svg?branch=master)](https://travis-ci.org/longshihui/vue-cli-plugin-publicpath)  [![](https://img.shields.io/npm/v/vue-cli-plugin-publicpath.svg)](https://www.npmjs.com/package/vue-cli-plugin-publicpath)  [![](https://img.shields.io/amo/d/vue-cli-plugin-publicpath.svg)](https://www.npmjs.com/package/vue-cli-plugin-publicpath) [![](https://img.shields.io/apm/l/vue-cli-plugin-navigator.svg)](https://www.npmjs.com/package/vue-cli-plugin-navigator)
+[![Build Status](https://travis-ci.org/longshihui/vue-cli-plugin-publicpath.svg?branch=master)](https://travis-ci.org/longshihui/vue-cli-plugin-publicpath) [![](https://img.shields.io/npm/v/vue-cli-plugin-publicpath.svg)](https://www.npmjs.com/package/vue-cli-plugin-publicpath) [![](https://img.shields.io/npm/l/vue-cli-plugin-publicpath.svg)](https://www.npmjs.com/package/vue-cli-plugin-publicpath)
 
 重写生产环境资源发布路径
 
