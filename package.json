@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-publicpath",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "rewrite assets public path",
   "main": "./service/index.js",
   "scripts": {
