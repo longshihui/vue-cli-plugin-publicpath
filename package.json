@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-publicpath",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "rewrite assets public path",
   "main": "./service/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/longshihui/vue-cli-plugin-publicpath#readme",
   "devDependencies": {
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-service": "^3.3.0",
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^1.3.1",

@@ -4,19 +4,19 @@ const _ = require('lodash');
 /**
  * 计算发布路径
  * @param expectedPublicPath
- * @param {string} baseUrl
+ * @param {string} defaultPublicPath
  * @return {*}
  */
-function getPublicPath(expectedPublicPath, baseUrl) {
-    return _.isString(expectedPublicPath) ? expectedPublicPath : baseUrl;
+function getPublicPath(expectedPublicPath, defaultPublicPath) {
+    return _.isString(expectedPublicPath) ? expectedPublicPath : defaultPublicPath;
 }
 
-module.exports = (baseUrl, pluginOptions) => {
+module.exports = (defaultPublicPath, pluginOptions) => {
     return {
-        css: getPublicPath(pluginOptions.css, baseUrl),
-        images: getPublicPath(pluginOptions.images, baseUrl),
-        svg: getPublicPath(pluginOptions.svg, baseUrl),
-        media: getPublicPath(pluginOptions.media, baseUrl),
-        fonts: getPublicPath(pluginOptions.fonts, baseUrl)
+        css: getPublicPath(pluginOptions.css, defaultPublicPath),
+        images: getPublicPath(pluginOptions.images, defaultPublicPath),
+        svg: getPublicPath(pluginOptions.svg, defaultPublicPath),
+        media: getPublicPath(pluginOptions.media, defaultPublicPath),
+        fonts: getPublicPath(pluginOptions.fonts, defaultPublicPath)
     }
 };
