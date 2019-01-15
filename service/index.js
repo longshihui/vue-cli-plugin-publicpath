@@ -29,7 +29,7 @@ module.exports = (api, projectOptions) => {
         'publicPath',
         {}
     );
-    pluginOptions = optionsDefaulter(projectOptions.baseUrl, pluginOptions);
+    pluginOptions = optionsDefaulter(projectOptions.publicPath || projectOptions.baseUrl, pluginOptions);
     // 修改css发布路径
     api.chainWebpack(config => {
         const modify = createModifier(pluginOptions);

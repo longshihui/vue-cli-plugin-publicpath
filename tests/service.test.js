@@ -69,21 +69,21 @@ function createService(projectOptions) {
 }
 
 describe('默认情况', () => {
-    test('默认时，所有资源publicPath为baseUrl', () => {
+    test('默认时，所有资源publicPath为publicPath', () => {
         const projectOptions = {
-            baseUrl: '//static.com'
+            publicPath: '//static.com'
         };
         const service = createService(projectOptions);
         const chainConfig = service.resolveChainableWebpackConfig();
         AssetTypes.forEach(type => {
-            Tester[type](projectOptions.baseUrl, chainConfig);
+            Tester[type](projectOptions.publicPath, chainConfig);
         })
     });
 });
 
 describe('根据配置修改发布路径', () => {
     const projectOptions = {
-        baseUrl: '//static.com',
+        publicPath: '//static.com',
         pluginOptions: {
             publicPath: {}
         }
